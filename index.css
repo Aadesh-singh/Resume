@@ -154,12 +154,84 @@ b {
     border-radius: 10px;
 } */
 
-/* skills sections */
+/* .skills-display {
+    width: 70%;
+     height: auto;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
 
+#skills h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f6f6f6;
+    font-size: 3rem;
+    opacity: 1;
+    display: inline-block;
+    margin-top: 1%;
+    background-color:rgb(76, 168, 168) ;
+    border : 4px solid rgb(76, 168, 168) ;
+    border-radius: 23px;
+    padding: 0px 8px;
+
+}
+
+    .skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.mb-red {
+    background-color: orangered;
+}
+.mb-gold {
+    background-color: rgb(155, 132, 0);
+}
+.mb-blue{
+    background-color: rgb(22, 78, 78);
+}
+.mb-teal{
+    background-color: teal;
+}
+.mb-light-purple{
+    background-color: purple;
+}
+.mb-orange {
+    background-color: orange;
+}
+
+/* skills sections */
+/* 
 .skills-display {
     width: 70%;
      height: auto;
-    /*border: 2px solid black; */
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -189,10 +261,8 @@ b {
     box-shadow: 0px 0px 6px 4px rgba(177, 177, 177, 0.9);
 }
 .base {
-    /* background-color: rgb(107, 189, 189); */
     color: white;
     padding: inherit;
-    /* width: 50%; */
     height: inherit;
     border-radius: 13px 0px 0px 13px;
     margin-left: -100%;
@@ -229,7 +299,10 @@ width: 60%;
     background-color: rgba(0, 159, 74, 1);
 width: 60%;
 }
+ */
 
+
+ 
 /* experience */
 
 #experience {
@@ -279,7 +352,7 @@ position: absolute;
     position: absolute;
     height: 75%;
     width: 0;
-    top: 1600px;
+    top: 1677px;
     left: 640px;
     border: 1px dashed rgba(0, 159, 74, 1);
 }
