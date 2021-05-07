@@ -31,6 +31,8 @@ for(var i=0 ; i< navMenuAnchorTagId.length; i++){    //this line is only adding 
         },15)
     });
 }
+
+
 /*
 in case when we intent to pass function in html then we can use this code it will work exactly same as above..
 
@@ -122,7 +124,39 @@ function checkScroll() {
 
 
 
+const percentLabel = document.querySelector("#perc");   //selecting the element where we want to show percentage.
+//Event listener to handle scroll event for percentage
+window.addEventListener("scroll", () => {
+  let scrollTop = window.scrollY;                                   //it gives the no. of pixel a value is scrolled and this value can or cannot be a whole number.
+  let docHeight = document.body.offsetHeight;                       // it gives the offset height of the body
+  let winHeight = window.innerHeight;                               // gives innerheight if the body.    
+  let scrollPercent = scrollTop / (docHeight - winHeight);          //this determines the scroll percentage using given formula    
+  let scrollPercentRounded = Math.round(scrollPercent * 100);       //since the value can or cannot be rounded hence we round it.
+  percentLabel.innerHTML = `Scrolled ${scrollPercentRounded}%`;    //we render the value to screen.
+    
+});
+
 window.addEventListener("scroll", checkScroll);
+
 
 // This event fills the progress bars if they are displayed on the screen when the page is loaded.
 //window.addEventListener("load", checkScroll);
+
+//back to top button animation portion starts here
+
+
+var backTotop = document.getElementById('scrtop');
+backTotop.addEventListener('click', function(event){
+    event.preventDefault();
+    
+    var homeCoord = document.getElementById('home').getBoundingClientRect().top;
+    let cur = backTotop.getBoundingClientRect().top;
+    let top_id = setInterval(function(){
+        if( cur <= homeCoord){
+            
+            clearInterval(top_id);
+        }
+        cur -= 30;
+        window.scrollBy(0,-30);
+    },15)
+})
