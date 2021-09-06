@@ -158,5 +158,12 @@ backTotop.addEventListener('click', function(event){
         }
         cur -= 30;
         window.scrollBy(0,-30);
-    },15)
-})
+    },15);
+});
+
+const sendButton = document.querySelector('.sub-btn');
+console.log(sendButton);
+
+function mail(e) {
+    // e.preventDefault();
+}
