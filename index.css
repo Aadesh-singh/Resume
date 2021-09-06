@@ -53,10 +53,12 @@ nav {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-evenly;
+    /* justify-content: center; */
 }
 
 nav ul li {
     list-style: none;
+    margin: 0px -188px;
     /* display: inline-block; */
     
 }
@@ -660,7 +662,7 @@ button:focus {
     border: 2px solid teal;
     padding: 5px 30px;
     position: fixed;
-    top: 10px;
+    top: 41px;
     right: 1%;
     border-radius: 20px;
     z-index: 3;
