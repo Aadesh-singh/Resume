@@ -745,12 +745,15 @@ button:focus {
         font-size: 1rem;
         margin-left: 50%;
     }
+    nav ul li{
+        margin: 0;
+    }
 
     ul.icons{
         display: flex !important;
         margin: auto;
         justify-content: center;
-        margin-left: -36px;
+        margin-left: -51px;
     }
     .icons {
         margin-left: 11%;
